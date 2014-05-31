@@ -3,4 +3,4 @@ maxwellxu.github.com
 
 I learning git now!
 
-hello
+Git is a distributed version control system!
