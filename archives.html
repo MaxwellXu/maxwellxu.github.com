@@ -1,0 +1,70 @@
+---
+layout: page
+title: 文章归档
+---
+
+<!-- 
+	<ul>
+		<li>
+			<span class="title_1">2014</span>
+			<ul>
+				<li class="title_2">04-12<a href="#">第一篇文章</a></li>
+				<li class="title_2">03-12<a href="#">test</a></li>
+				<li class="title_2">02-12<a href="#">test</a></li>
+				<li class="title_2">01-12<a href="#">test</a></li>
+			</ul>
+		</li>
+		<li>
+			<span class="title_1">2013</span>
+			<ul>
+				<li class="title_2">04-12<a href="#">test</a></li>
+				<li class="title_2">03-12<a href="#">test</a></li>
+				<li class="title_2">02-12<a href="#">test</a></li>
+				<li class="title_2">01-12<a href="#">test</a></li>
+			</ul>
+		</li>
+	</ul>
+ -->
+
+<ul>
+{% for post in site.posts %}
+	{% assign curYear= post.date | date: "%Y" %}
+	{% assign curDate= post.date | date: "%m-%d" %}
+	{% if forloop.first %} 
+		{% assign init = post.date | date: "%Y" %}
+			<li><span class="title_1">{{ curYear }}</span><ul>
+			<li class="title_2">{{ curDate }}<a href="#">{{ post.title }}</a></li>	
+
+	{% elsif forloop.last %}
+		{% if init != curYear %}
+			</ul>
+		</li>
+		<li>
+			<span class="title_1">{{ curYear }}</span>
+			<ul>
+				<li class="title_2">{{ curDate }}<a href="#">{{ post.title }}</a></li>	
+			</ul>
+		</li>
+		{% else %}
+			    <li class="title_2">{{ curDate }}<a href="#">{{ post.title }}</a></li>
+			</ul>
+		</li>
+		{% endif %}
+	{% else %}
+
+		{% if init != curYear %}
+			{%  assign init = curYear %}
+			</ul>
+		</li>
+		<li>
+			<span class="title_1">{{ curYear }}</span>
+			<ul>
+				<li class="title_2">{{ curDate }}<a href="#">{{ post.title }}</a></li>	
+		{% else %}
+			<li class="title_2">{{ curDate }}<a href="#">{{ post.title }}</a></li>
+		{% endif %}
+
+	{% endif %}
+{% endfor %}
+</ul>
+

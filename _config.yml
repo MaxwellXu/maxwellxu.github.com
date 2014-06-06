@@ -1,10 +1,43 @@
+# Build settings
+# markdown: rdiscount
+markdown: kramdown
+highlighter: pygments
+
+
 # Site settings
 title: xCode
 email: core_bin@163.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+description: ""
 baseurl: ""
-url: "http://www.baidu.com"
+url: http://localhost:4000
+username: maxwellxu
 
-# Build settings
-markdown: kramdown
-permalink: pretty
+
+nav:
+  - text: Home
+    url: /index.html
+    icon: icon-home
+    class: home
+  - text: Archvies
+    url: /archives.html
+    icon: icon-reorder
+    class: none
+  - text: Categories
+    url: /categories.html
+    icon: none
+  - text: About
+    url: /about.html
+    icon: icon-envelope-alt
+    class: none
+
+page:
+  - text: 文章归档
+    url: /archives.html
+    last: true
+  - text: 文章分类
+    url: /categories.html
+    last: true
+  - text: 关于我
+    url: /about.html
+    last: 
+
