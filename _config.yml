@@ -7,11 +7,14 @@ highlighter: pygments
 # Site settings
 title: xCode
 email: core_bin@163.com
-description: ""
+description: "个人博客，欢迎随便看看"
 baseurl: ""
 url: http://localhost:4000
 username: maxwellxu
 
+
+exclude: ['develop']
+keep_files: ['.git','.svn']
 
 nav:
   - text: Home
@@ -41,3 +44,5 @@ page:
     url: /about.html
     last: 
 
+author: 
+  name: Mx

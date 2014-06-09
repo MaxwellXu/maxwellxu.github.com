@@ -2,5 +2,4 @@
 layout: page
 title: 文章分类
 ---
-
-Categories
+<ul> <li> {% for category in site.categories %} <span class="title_1">{{ category[0] | capitalize }}</span> <ul> {% for page in category[1] %} <li class="title_2"><a href="{{ page.url }}">{{ page.title }}</a></li> {% endfor %} </ul> {% endfor %} </li> </ul>
