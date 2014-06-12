@@ -19,26 +19,28 @@ categories: Other
 
 由*月光博客*发的一条[微博][1]可以找到[google全球ip][2]，找一个可用去替换掉下面的*ip*即可
 
-    218.189.25.180 encrypted.google.com
-    218.189.25.180 encrypted-tbn0.google.com
-    218.189.25.180 encrypted-tbn1.google.com
-    218.189.25.180 encrypted-tbn2.google.com
-    218.189.25.180 encrypted-tbn3.google.com
-    218.189.25.180 encrypted-tbn4.google.com
-    218.189.25.180 encrypted-tbn5.google.com
-    218.189.25.180 encrypted-tbn6.google.com
-    218.189.25.180 encrypted-tbn7.google.com
-    218.189.25.180 encrypted-tbn8.google.com
-    218.189.25.180 encrypted-tbn9.google.com
-    218.189.25.180 encrypted.google.com.hk
-    218.189.25.180 www.google.com.hk
-    218.189.25.180 www.google.com
-    218.189.25.180 www.google.hk
-    218.189.25.180 themes.googleusercontent.com
-    218.189.25.180 fonts.googleapis.com
-    218.189.25.180 lh4.googleusercontent.com
-    218.189.25.180 account.google.com
-    218.189.25.180 ssl.gstatic.com
+{% highlight TeX %}
+218.189.25.180 encrypted.google.com
+218.189.25.180 encrypted-tbn0.google.com
+218.189.25.180 encrypted-tbn1.google.com
+218.189.25.180 encrypted-tbn2.google.com
+218.189.25.180 encrypted-tbn3.google.com
+218.189.25.180 encrypted-tbn4.google.com
+218.189.25.180 encrypted-tbn5.google.com
+218.189.25.180 encrypted-tbn6.google.com
+218.189.25.180 encrypted-tbn7.google.com
+218.189.25.180 encrypted-tbn8.google.com
+218.189.25.180 encrypted-tbn9.google.com
+218.189.25.180 encrypted.google.com.hk
+218.189.25.180 www.google.com.hk
+218.189.25.180 www.google.com
+218.189.25.180 www.google.hk
+218.189.25.180 themes.googleusercontent.com
+218.189.25.180 fonts.googleapis.com
+218.189.25.180 lh4.googleusercontent.com
+218.189.25.180 account.google.com
+218.189.25.180 ssl.gstatic.com
+{% endhighlight %}
 
 ### windows的hosts路径
 修改可能需要权限，`C:\Windows\System32\drivers\etc\hosts`

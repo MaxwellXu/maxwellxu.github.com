@@ -257,12 +257,14 @@ a:visited { color: #205caa; }
 
 .post pre,
 .post code {
-  border: 1px solid #d5d5e9;
+  display: inline-block;
   background-color: #eef;
   padding: 8px 12px;
+/* 
+  border: 1px solid #d5d5e9;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
-  border-radius: 3px;
+  border-radius: 3px;*/
   font-size: 15px;
 }
 
@@ -280,9 +282,9 @@ a:visited { color: #205caa; }
   border: 1px solid #000;
   background-color: #333;
   color: #FFF;
-  -webkit-border-radius: 3px;
+/*  -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
-  border-radius: 3px;
+  border-radius: 3px;*/
 }
 
 .post pre.terminal code { background-color: #333; }
@@ -290,7 +292,17 @@ a:visited { color: #205caa; }
 /* Syntax highlighting styles */
 /* ----------------------------------------------------------*/
 
-.highlight  { background: #ffffff; }
+.highlight  { 
+  padding: 10px 0;
+  width: 100%;
+  overflow: auto;
+}
+.highlight, p > pre, p > code, p > nobr > code, li > code, h5 > code, .note > code{
+  background: #eef;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
 .highlight .k { font-weight: bold } /* Keyword */
