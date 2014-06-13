@@ -2,7 +2,7 @@
 layout: post
 title: "使用google问题"
 date: 2014-06-12 01:50:00
-keywords: google用不了,google 403
+keywords: google搜索用不了,google 403
 categories: Other
 ---
 
@@ -52,8 +52,29 @@ categories: Other
 ### mac的hosts路径
 修改需要权限，`/etc/hosts`
 
-##另外2种方法，待整理再更新
+## 使用*ipv6*
+
+### 通过*isatap*隧道
+
+#### win7配置如下
+
++	1、确保本地连接`ipv6`协议勾选中
++	2、确保`IP Helper`服务是自动启动并运行中
++	3、确保是宽带拨号，如果是通过路由连接并使用nat，那么是不能正常连接`isatap`服务器
++	4、管理员打开命令行窗口，输入`netsh`，输入`int`，输入`ipv6`，输入`set route isatap.sjtu.edu.cn`，输入`set state enabled`，此时设置完毕，退出输入`exit`
+
+以上4点做到，应该是能成功，能成功标识是访问一下测试网站
++	1、[google-ipv6][21] 能打开是说明成功的
++	2、[kame][22] 点击*watch dancing kame*，乌龟会动说明是成功的
+
+详细图文请参考[ipv6高速访问国外网站][20]
+
+##另外1种方法，待整理再更新
 
 [1]:http://weibo.com/1494759712/B8vu5EkGv?type=repost "月光博客-google-ip"
 [2]:http://www.kookle.co.nr/ "google-all-ip"
+
+[20]:http://logicmd.net/2010/04/high-speed-visiting-abroad-websites-using-ipv6/ "ipv6-tutorial-1"
+[21]:http://ipv6.google.com "ivp6-test－connection-1"
+[22]:http://www.kame.net "ivp6-test-connection-2"
 
