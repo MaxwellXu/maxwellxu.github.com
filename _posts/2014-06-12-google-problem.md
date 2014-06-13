@@ -14,24 +14,28 @@ categories: Other
 +   使用*ipv6*
 +   使用*vpn*
 
+## 记录
+
+### 2013-06-13
+今天又用不了*google*，ip:*218.189.25.180*，ping不通。重新换了ip也无法使用搜索功能，将域名指向*218.189.25.132*提示*SSL Error*，不使用https可搜索。
 
 ## 修改*hosts*文件
 
 由*月光博客*发的一条[微博][1]可以找到[google全球ip][2]，找一个可用去替换掉下面的*ip*即可
 
 {% highlight TeX %}
-218.189.25.180 encrypted.google.com
-218.189.25.180 encrypted-tbn0.google.com
-218.189.25.180 encrypted-tbn1.google.com
-218.189.25.180 encrypted-tbn2.google.com
-218.189.25.180 encrypted-tbn3.google.com
-218.189.25.180 encrypted-tbn4.google.com
-218.189.25.180 encrypted-tbn5.google.com
-218.189.25.180 encrypted-tbn6.google.com
-218.189.25.180 encrypted-tbn7.google.com
-218.189.25.180 encrypted-tbn8.google.com
-218.189.25.180 encrypted-tbn9.google.com
-218.189.25.180 encrypted.google.com.hk
+#218.189.25.180 encrypted.google.com
+#218.189.25.180 encrypted-tbn0.google.com
+#218.189.25.180 encrypted-tbn1.google.com
+#218.189.25.180 encrypted-tbn2.google.com
+#218.189.25.180 encrypted-tbn3.google.com
+#218.189.25.180 encrypted-tbn4.google.com
+#218.189.25.180 encrypted-tbn5.google.com
+#218.189.25.180 encrypted-tbn6.google.com
+#218.189.25.180 encrypted-tbn7.google.com
+#218.189.25.180 encrypted-tbn8.google.com
+#218.189.25.180 encrypted-tbn9.google.com
+#218.189.25.180 encrypted.google.com.hk
 218.189.25.180 www.google.com.hk
 218.189.25.180 www.google.com
 218.189.25.180 www.google.hk
@@ -52,3 +56,4 @@ categories: Other
 
 [1]:http://weibo.com/1494759712/B8vu5EkGv?type=repost "月光博客-google-ip"
 [2]:http://www.kookle.co.nr/ "google-all-ip"
+
