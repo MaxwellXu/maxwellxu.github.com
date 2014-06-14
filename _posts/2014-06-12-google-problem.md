@@ -64,6 +64,7 @@ categories: Other
 +	4、管理员打开命令行窗口，输入`netsh`，输入`int`，输入`ipv6`，输入`set route isatap.sjtu.edu.cn`，输入`set state enabled`，此时设置完毕，退出输入`exit`
 
 以上4点做到，应该是能成功，能成功标识是访问一下测试网站
+
 +	1、[google-ipv6][21] 能打开是说明成功的
 +	2、[kame][22] 点击*watch dancing kame*，乌龟会动说明是成功的
 
