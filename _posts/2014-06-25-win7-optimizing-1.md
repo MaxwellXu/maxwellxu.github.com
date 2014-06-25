@@ -20,4 +20,4 @@ categories: Other
 
 ###彻底删除启动项###		
 
-如果你觉得`禁用启动项`还不够爽，那么可以通过`注册列表`彻底删除它们，快捷键*win*＋*R*，输入*regedit*，确定后弹出*注册列表*窗口，依次展开*HEKY_LOCAL_MECHINE\SOFTWARE\Microsoft\Shared Tools\MSConfig*，可以看到目录`startupreg`和`startupfolder`，把不需要的删除即可。
+如果你觉得*禁用启动项*还不够爽，那么可以通过*注册列表*彻底删除它们，快捷键`win＋R`，输入`regedit`，确定后弹出*注册列表*窗口，依次展开*HEKY_LOCAL_MECHINE\SOFTWARE\Microsoft\Shared Tools\MSConfig*，可以看到目录`startupreg`和`startupfolder`，把不需要的删除即可。
