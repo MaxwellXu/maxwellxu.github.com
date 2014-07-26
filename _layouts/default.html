@@ -25,3 +25,16 @@
 <script type="text/javascript">
 document.write(unescape("%3Cscript src='http://hm.baidu.com/h.js%3F3d36a22c6495c12c4f57f57e9c559a4d' type='text/javascript'%3E%3C/script%3E"));
 </script>
+{% if page.categories %}
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"orz1234"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0] 
+       || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+</script>
+{% endif %}
